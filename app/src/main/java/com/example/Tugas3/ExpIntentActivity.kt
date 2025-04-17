@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.Tugas3.databinding.ActivityExpIntentBinding
+import androidx.core.net.toUri
 
 class ExpIntentActivity : AppCompatActivity() {
 
@@ -39,19 +40,19 @@ class ExpIntentActivity : AppCompatActivity() {
 
         // TOMBOL UNTUK MELEKUKAN PANGGILAN
         binding.btnCall.setOnClickListener() {
-            val uri = Uri.parse("tel:" + binding.editTxtPhone.text.toString())
+            val uri = ("tel:" + binding.editTxtPhone.text.toString()).toUri()
             startActivity(Intent(Intent.ACTION_DIAL,uri))
         }
 
         // TOMBOL OPEN GOOGLE MAPS
         binding.btnOpenGoogleMap.setOnClickListener() {
-            val uri = Uri.parse("geo:0,0?q=" + binding.editTxtLocation.text.toString())
+            val uri = ("geo:0,0?q=" + binding.editTxtLocation.text.toString()).toUri()
             startActivity(Intent(Intent.ACTION_VIEW,uri))
         }
 
         // TOMBOL OPEN WEB
         binding.btnOpenWeb.setOnClickListener() {
-            val uri = Uri.parse(binding.editTxtWebURL.text.toString())
+            val uri = binding.editTxtWebURL.text.toString().toUri()
             startActivity(Intent(Intent.ACTION_VIEW,uri))
         }
 
@@ -63,7 +64,7 @@ class ExpIntentActivity : AppCompatActivity() {
         // TOMBOL OPEN GALERY
         binding.btnOpenGalery.setOnClickListener() {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("content://media/external/images/media")
+            intent.data = "content://media/external/images/media".toUri()
             startActivity(intent)
         }
 
