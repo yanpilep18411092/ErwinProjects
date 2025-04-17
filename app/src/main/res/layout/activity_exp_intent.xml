@@ -16,13 +16,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="15dp"
             tools:context=".MainActivity">
 
             <EditText
@@ -34,7 +32,7 @@
                 android:textColorHint="#6D6D6D"
                 android:textColor="#DEDEDE"
                 android:layout_marginTop="20dp"
-                android:hint="input text" />
+                android:hint="@string/input_text" />
 
             <Button
                 android:id="@+id/btnShareTo"
@@ -44,7 +42,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:text="Share to"
                 android:textColor="#A6A6A6"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/editTxtPhone"
@@ -54,7 +52,7 @@
                 android:textAlignment="center"
                 android:textColorHint="#6D6D6D"
                 android:textColor="#A6A6A6"
-                android:hint="input phone number"
+                android:hint="@string/input_phone_number"
                 android:inputType="phone"
                 android:layout_marginTop="10dp" />
 
@@ -66,7 +64,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:text="call"
                 android:textColor="#A6A6A6"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/editTxtLocation"
@@ -88,7 +86,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:text="Open google map"
                 android:textColor="#A6A6A6"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/editTxtWebURL"
@@ -99,8 +97,9 @@
                 android:textColorHint="#6D6D6D"
                 android:textColor="#DEDEDE"
                 android:layout_marginTop="20dp"
-                android:hint="input Website URL"
-                android:inputType="textPostalAddress" />
+                android:hint="@string/input_website_url"
+                android:inputType="textPostalAddress"
+                tools:ignore="TextFields" />
 
             <Button
                 android:id="@+id/btnOpenWeb"
@@ -110,7 +109,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:text="Open website"
                 android:textColor="#A6A6A6"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btnOpenCamera"
@@ -120,7 +119,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:text="Open Camera"
                 android:textColor="#A6A6A6"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btnOpenGalery"
@@ -130,7 +129,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:textColor="#A6A6A6"
                 android:text="Open Galery"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btnOpenAlaram"
@@ -140,7 +139,7 @@
                 android:background="@drawable/btn_dual_clr"
                 android:textColor="#A6A6A6"
                 android:text="Open Alaram"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 

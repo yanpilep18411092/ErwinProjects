@@ -24,4 +24,7 @@ Papeda adalah makanan khas Papua yang terbuat dari tepung sagu. Papeda memiliki 
     <string name="asal_daerah">asal daerah</string>
     <string name="todo">TODO</string>
     <string name="papua">Papua</string>
+    <string name="input_text">input text</string>
+    <string name="input_phone_number">input phone number</string>
+    <string name="input_website_url">input Website URL</string>
 </resources>
